@@ -18,7 +18,7 @@ client.on("message", message => {
 client.on("message", message => {
   if(message.author.id === "369256915479560192") {
     if(message.content === "botdeveloper!ping")
-      message.channgel.send(`Pong, Ping is ${Math.floor(bot.ping)} ms`)
+      message.channel.send(`Pong, Ping is ${Math.floor(bot.ping)} ms`)
   }
 })
 
