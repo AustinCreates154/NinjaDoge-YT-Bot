@@ -22,4 +22,4 @@ client.on("message", message => {
   }
 })
 
-client.login(process.evl.TOKEN)
+client.login(process.env.TOKEN)
