@@ -8,7 +8,7 @@ client.on('ready', () => {
 })
 
 client.on("message", message => {
-  if(author.user.id === "369256915479560192"){
+  if(message.author.id === "369256915479560192"){
     if(message.content === "botdeveloper!shutdown"){
       client.destroy(143)
     }
@@ -16,7 +16,7 @@ client.on("message", message => {
 })
 
 client.on("message", message => {
-  if(author.user.id === "369256915479560192") {
+  if(message.author.id === "369256915479560192") {
     if(message.content === "botdeveloper!ping")
       message.channgel.send(`Pong, Ping is ${Math.floor(bot.ping)} ms`)
   }
