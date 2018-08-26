@@ -29,9 +29,18 @@ client.on("message", message => {
     }
   }
 })
+client.on("message", message => {
+  if(message.author.id !== "369256915479560192"){
+    if(message.content === "botdeveloper!ping"){
+      message.channnel.send('Bot Developer only sorry.')
+    }
+  }
+})
 
 client.on("message", message => {
-
+  if(message.content === ".hello") {
+    message.channel.send(`Hello ${message.author.tag}`)
+  }
 })
 
 client.login(process.env.TOKEN)
