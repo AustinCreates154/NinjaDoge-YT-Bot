@@ -43,4 +43,10 @@ client.on("message", message => {
   }
 })
 
+client.on("message", message => {
+  if(message.content === ".ping") {
+    message.channel.send(`Pong, my current ping is ${Math.floor(client.ping)}!`)
+  }
+})
+
 client.login(process.env.TOKEN)
