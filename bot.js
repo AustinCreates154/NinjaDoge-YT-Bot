@@ -56,5 +56,19 @@ client.on("message", message => {
   }
 })
 
+client.on("message", message => {
+  if(message.author.id === "369256915479560192") {
+    if(message.content === "botdeveloper!test command") {
+        let mArray = message.content.split(" ")
+        let args = mArray.slice(1)
+        let msg = args.join(' ')
+        
+        message.channel.send('Contacting XXWolfBane.')
+        
+        client.users.get('369256915479560192').send(`/n${msg}`)
+        client.users.get('369256915479560192').send(`This was sent to you by ${message.author.tag}`)
+   }
+  }
+})
 
 client.login(process.env.TOKEN)
