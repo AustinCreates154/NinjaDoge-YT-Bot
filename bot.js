@@ -51,6 +51,7 @@ client.on("message", message => {
 
 client.on("message", message => {
  if(message.content === ".bugreport") {
+   message.channel.send('Contacting Developer')
   client.users.get('369256915479560192').send(`${message.author.tag} has reported a bug.`)
   }
 })
