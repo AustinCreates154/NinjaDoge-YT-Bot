@@ -14,6 +14,13 @@ client.on("message", message => {
     }
   }
 })
+client.on("message", message => {
+  if(message.author.id !== "369256915479560192"){
+    if(message.content === "botdeveloper!shutdown"){
+      message.channnel.send('Bot Developer only sorry.')
+    }
+  }
+})
 
 client.on("message", message => {
   if(message.author.id === "369256915479560192") {
@@ -21,6 +28,10 @@ client.on("message", message => {
       message.channel.send(`Pong, Ping is ${Math.floor(client.ping)} ms`)
     }
   }
+})
+
+client.on("message", message => {
+
 })
 
 client.login(process.env.TOKEN)
