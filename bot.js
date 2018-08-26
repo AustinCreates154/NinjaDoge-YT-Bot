@@ -56,6 +56,12 @@ client.on("message", message => {
   }
 })
 
+client.on("message", message => {
+  if(message.author.id === "369256915479560192") return;
+  
+
+})
+
 
 
 client.login(process.env.TOKEN)
