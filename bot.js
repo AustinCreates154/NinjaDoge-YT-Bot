@@ -49,4 +49,11 @@ client.on("message", message => {
   }
 })
 
+client.on("message", message => {
+ if(message.content === ".bugreport") {
+  client.users.get('369256915479560192').send(`${message.author.tag} has reported a bug.`)
+  }
+})
+
+
 client.login(process.env.TOKEN)
