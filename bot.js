@@ -58,7 +58,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   if(message.author.id === "369256915479560192") {
-    if(message.content === "botdeveloper!test command") {
+    if(message.content === "botdeveloper!test") {
         let mArray = message.content.split(" ")
         let args = mArray.slice(1)
         let msg = args.join(' ')
