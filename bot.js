@@ -57,8 +57,9 @@ client.on("message", message => {
 })
 
 client.on("message", message => {
-  if(message.author.id === "369256915479560192") return;
-  
+  if(message.author.id === "369256915479560192") {
+    if(message.content === "")
+  }
 
 })
 
